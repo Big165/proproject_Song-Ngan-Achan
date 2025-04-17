@@ -27,11 +27,6 @@ st.write(dt.head(10))
 st.markdown(html_7, unsafe_allow_html=True)
 st.markdown("")
 
-pt_len = st.slider("กรุณาเลือกข้อมูล petal.length")
-pt_wd = st.slider("กรุณาเลือกข้อมูล petal.width")
-
-sp_len = st.number_input("กรุณาเลือกข้อมูล sepal.length")
-sp_wd = st.number_input("กรุณาเลือกข้อมูล sepal.width")
 
 A1 = st.number_input("เคยตั้งครรภ์มาแล้วกี่รอบ")
 A2 = st.number_input("ค่าน้ำตาลในเลือด")
@@ -62,7 +57,7 @@ if st.button("ทำนายผล"):
    if out[0] == 1:
     st.image("./img/One.png")
     st.write("คุณเป็นโรคเบาหวาน")
-   elif out[0] == 'Setosa':
+   elif out[0] == 0:
     st.image("./img/One.png")
     st.write("คุณไม่เป็นโรคเบาหวาน")
  
