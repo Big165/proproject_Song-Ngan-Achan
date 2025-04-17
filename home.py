@@ -19,10 +19,6 @@ st.markdown("")
 dt = pd.read_csv("./data/diabetes-dataset.csv")
 st.write(dt.head(10))
 
-st.markdown(html_7, unsafe_allow_html=True)
-st.markdown("")
-
-st.markdown("กรองข้อมูลของคุณเพื่อตรวจสอบ")
 
 A1 = st.number_input("เคยตั้งครรภ์มาแล้วกี่รอบ")
 A2 = st.number_input("ค่าน้ำตาลในเลือด")
