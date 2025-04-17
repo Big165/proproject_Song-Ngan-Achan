@@ -1,3 +1,4 @@
+from sklearn.neighbors import KNeighborsClassifier
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -7,20 +8,6 @@ st.header("🍖🍖Website Developing using Python🍖🍖")
 
 st.image("./img/One.png")
 st.subheader("นายวงศกร สุขขันติราษฎร์")
-
-col1, col2, col3 = st.columns(3)
-
-with col1:
-        st.header("black")
-        st.image("./img/One.png")
-
-with col2:
-        st.header("white")
-        st.image("./img/One.png")
-
-with col3:
-        st.header("yellow")
-        st.image("./img/One.png")
 
 html_7 = """
 <div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
@@ -54,9 +41,6 @@ A5 = st.number_input("ข้อมูล 5")
 A6 = st.number_input("ข้อมูล 6")
 A7 = st.number_input("ข้อมูล 7")
 A8 = st.number_input("ข้อมูล 8")
-A9 = st.number_input("ข้อมูล 9")
-A10 = st.number_input("ข้อมูล 10")
-A11 = st.number_input("ข้อมูล 11")
 
 
 
