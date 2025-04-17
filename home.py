@@ -10,7 +10,7 @@ st.image("./img/One.png")
 
 html_7 = """
 <div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h5>ข้อมูลโรคเบาหวาน</h5></center>
+<center><h5>ข้อมูลตัวอย่าง</h5></center>
 </div>
 """
 st.markdown(html_7, unsafe_allow_html=True)
@@ -22,12 +22,7 @@ st.write(dt.head(10))
 st.markdown(html_7, unsafe_allow_html=True)
 st.markdown("")
 
-
-html_7 = """
-<div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h5>กรองข้อมูลของคุณเพื่อตรวจสอบว่าคุณ! เป็นโรคเบาหวานหรือไม่</h5></center>
-</div>
-"""
+st.markdown("กรองข้อมูลของคุณเพื่อตรวจสอบ")
 
 A1 = st.number_input("เคยตั้งครรภ์มาแล้วกี่รอบ")
 A2 = st.number_input("ค่าน้ำตาลในเลือด")
