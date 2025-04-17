@@ -36,7 +36,7 @@ st.subheader("ข้อมูลส่วนแรก 10 แถว")
 dt = pd.read_csv("./data/diabetes-dataset.csv")
 st.write(dt.head(10))
 
-st.markdown(html_8, unsafe_allow_html=True)
+st.markdown(html_7, unsafe_allow_html=True)
 st.markdown("")
 
 pt_len = st.slider("กรุณาเลือกข้อมูล petal.length")
