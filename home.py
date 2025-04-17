@@ -61,9 +61,9 @@ A11 = st.number_input("ข้อมูล 11")
 
 if st.button("ทำนายผล"):
     #st.write("ทำนาย")
-   dt = pd.read_csv("./data/heart.csv") 
-   X = dt.drop('HeartDisease', axis=1)
-   y = dt.HeartDisease
+   dt = pd.read_csv("./data/diabetes-dataset.csv")
+   X = dt.drop('diabetes-dataset', axis=1)
+   y = dt.diabetes-dataset
 
    Knn_model = KNeighborsClassifier(n_neighbors=3)
    Knn_model.fit(X, y)  
@@ -74,9 +74,9 @@ if st.button("ทำนายผล"):
    out=Knn_model.predict(x_input)
 
    if out[0] == 1:
-    st.image("./img/one.jpg")
+    st.image("./img/One.png")
    elif out[0] == 'Setosa':
-    st.image("./img/two.jpg")
+    st.image("./img/One.png")
  
 else:
     st.write("ไม่ทำนาย")
