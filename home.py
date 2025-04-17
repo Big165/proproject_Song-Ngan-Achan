@@ -11,16 +11,12 @@ st.subheader("นายวงศกร สุขขันติราษฎร�
 
 html_7 = """
 <div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h5>ชนเผ่ามนุษย์</h5></center>
+<center><h5>ข้อมูลโรคเบาหวาน</h5></center>
 </div>
 """
 st.markdown(html_7, unsafe_allow_html=True)
 st.markdown("")
 st.markdown("")
-st.subheader("ข้อมูลส่วนแรก 10 แถว")
-dt = pd.read_csv("./data/diabetes-dataset.csv")
-st.write(dt.head(10))
-st.subheader("ข้อมูลส่วนแรก 10 แถว")
 dt = pd.read_csv("./data/diabetes-dataset.csv")
 st.write(dt.head(10))
 
