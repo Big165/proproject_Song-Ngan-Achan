@@ -3,11 +3,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.title("🐷🐷🐷Website Developing using Python🐷🐷")
-st.header("🍖🍖Website Developing using Python🍖🍖")
-
+st.title("คาดการณ์ว่าคุณเป็นโรคเบาหวานหรือไม่")
 st.image("./img/One.png")
-st.subheader("นายวงศกร สุขขันติราษฎร์")
+
+
 
 html_7 = """
 <div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
@@ -24,18 +23,24 @@ st.markdown(html_7, unsafe_allow_html=True)
 st.markdown("")
 
 
+html_7 = """
+<div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<center><h5>กรองข้อมูลของคุณเพื่อตรวจสอบว่าคุณ! เป็นโรคเบาหวานหรือไม่</h5></center>
+</div>
+"""
+
 A1 = st.number_input("เคยตั้งครรภ์มาแล้วกี่รอบ")
 A2 = st.number_input("ค่าน้ำตาลในเลือด")
 A3 = st.number_input("ความดันโลหิต")  
 A4 = st.number_input("ไขมันในผิวหนัง")
-A5 = st.number_input("อินซูลิน")
-A6 = st.number_input("BMI")
+A5 = st.number_input("ค่าอินซูลิน")
+A6 = st.number_input("ค่า BMI")
 A7 = st.number_input("โรคเบาหวานสายเลือด")
-A8 = st.number_input("อายุ")
+A8 = st.number_input("อายุของคุณ")
 
 
 
-if st.button("ทำนายผล"):
+if st.button("กดตรงนี้เพื่อดูผล"):
     #st.write("ทำนาย")
    dt = pd.read_csv("./data/diabetes-dataset.csv")
    X = dt.drop('Outcome', axis=1)
@@ -59,3 +64,7 @@ if st.button("ทำนายผล"):
  
 else:
     st.write("ไม่ทำนาย")
+
+
+
+st.subheader("By นายวงศกร สุขขันติราษฎร์")
