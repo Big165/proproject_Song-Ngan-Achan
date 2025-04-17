@@ -33,14 +33,14 @@ pt_wd = st.slider("กรุณาเลือกข้อมูล petal.width"
 sp_len = st.number_input("กรุณาเลือกข้อมูล sepal.length")
 sp_wd = st.number_input("กรุณาเลือกข้อมูล sepal.width")
 
-A1 = st.number_input("ข้อมูล 1")
-A2 = st.number_input("ข้อมูล 2")
-A3 = st.number_input("ข้อมูล 3")  
-A4 = st.number_input("ข้อมูล 4")
-A5 = st.number_input("ข้อมูล 5")
-A6 = st.number_input("ข้อมูล 6")
-A7 = st.number_input("ข้อมูล 7")
-A8 = st.number_input("ข้อมูล 8")
+A1 = st.number_input("เคยตั้งครรภ์มาแล้วกี่รอบ")
+A2 = st.number_input("ค่าน้ำตาลในเลือด")
+A3 = st.number_input("ความดันโลหิต")  
+A4 = st.number_input("ไขมันในผิวหนัง")
+A5 = st.number_input("อินซูลิน")
+A6 = st.number_input("BMI")
+A7 = st.number_input("โรคเบาหวานสายเลือด")
+A8 = st.number_input("อายุ")
 
 
 
@@ -61,8 +61,10 @@ if st.button("ทำนายผล"):
 
    if out[0] == 1:
     st.image("./img/One.png")
+    st.write("คุณเป็นโรคเบาหวาน")
    elif out[0] == 'Setosa':
     st.image("./img/One.png")
+    st.write("คุณไม่เป็นโรคเบาหวาน")
  
 else:
     st.write("ไม่ทำนาย")
