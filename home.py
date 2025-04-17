@@ -63,8 +63,9 @@ A11 = st.number_input("ข้อมูล 11")
 if st.button("ทำนายผล"):
     #st.write("ทำนาย")
    dt = pd.read_csv("./data/diabetes-dataset.csv")
-   X = dt.drop('DiabetesDataset', axis=1)
-   y = dt.DiabetesDataset
+   X = dt.drop('HeartDisease', axis=1)
+   y = dt.HeartDisease
+
 
    Knn_model = KNeighborsClassifier(n_neighbors=3)
    Knn_model.fit(X, y)  
