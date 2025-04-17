@@ -1,5 +1,8 @@
+
+from sklearn.neighbors import KNeighborsClassifier
 import streamlit as st
 import pandas as pd
+import numpy as np
 
 st.title("🐷🐷🐷Website Developing using Python🐷🐷")
 st.header("🍖🍖Website Developing using Python🍖🍖")
