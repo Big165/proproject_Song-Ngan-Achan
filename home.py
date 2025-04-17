@@ -4,22 +4,22 @@ import pandas as pd
 st.title("🐷🐷🐷Website Developing using Python🐷🐷")
 st.header("🍖🍖Website Developing using Python🍖🍖")
 
-st.image('./img/Dog.jpg')
+st.image("./img/One.png")
 st.subheader("นายวงศกร สุขขันติราษฎร์")
 
 col1, col2, col3 = st.columns(3)
 
 with col1:
         st.header("black")
-        st.image("./ing/black.jpg")
+        st.image("./img/One.png")
 
 with col2:
         st.header("white")
-        st.image("./ing/white.jpg")
+        st.image("./img/One.png")
 
 with col3:
         st.header("yellow")
-        st.image("./ing/yellow.jpg")
+        st.image("./img/One.png")
 
 html_7 = """
 <div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
