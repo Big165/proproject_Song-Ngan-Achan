@@ -43,11 +43,12 @@ if st.button("กดตรงนี้เพื่อดูผล"):
    out=Knn_model.predict(x_input)
 
    if out[0] == 1:
-    st.image("./img/One.png")
-    st.write("คุณเป็นโรคเบาหวาน")
+    st.image('./img/THREE.png', width=1000)
+    st.write("เสียใจด้วย คุณเป็นโรคเบาหวาน")
    elif out[0] == 0:
-    st.image("./img/One.png")
-    st.write("คุณไม่เป็นโรคเบาหวาน")
+
+    st.image('./img/TWO.png', width=1000)
+    st.write("ยินดีด้วย คุณไม่เป็นโรคเบาหวาน")
  
 else:
     st.write("ไม่ทำนาย")
