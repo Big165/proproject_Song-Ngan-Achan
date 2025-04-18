@@ -5,7 +5,7 @@ import numpy as np
 
 st.title("คาดการณ์ว่าคุณเป็นโรคเบาหวานหรือไม่")
 st.image("./img/One.png")
-<img src="./img/One.png" style="width: 500px; height: auto;">
+img src="./img/One.png" style="width: 500px; height: auto;"
 
 
 
