@@ -5,19 +5,16 @@ import numpy as np
 
 st.title("คาดการณ์ว่าคุณเป็นโรคเบาหวานหรือไม่")
 st.image("./img/One.png")
+<img src="./img/One.png" style="width: 500px; height: auto;">
 
 
 
 html_7 = """
 <div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h5>ข้อมูลตัวอย่าง</h5></center>
+<center><h5>กรอกข้อมูลของคุณ</h5></center>
 </div>
 """
 st.markdown(html_7, unsafe_allow_html=True)
-st.markdown("")
-st.markdown("")
-dt = pd.read_csv("./data/diabetes-dataset.csv")
-st.write(dt.head(10))
 
 
 A1 = st.number_input("เคยตั้งครรภ์มาแล้วกี่รอบ")
