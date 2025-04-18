@@ -4,8 +4,7 @@ import pandas as pd
 import numpy as np
 
 st.title("คาดการณ์ว่าคุณเป็นโรคเบาหวานหรือไม่")
-st.image("./img/One.png")
-st.image('./img/One.png', width=500)
+st.image('./img/One.png', width=1000)
 
 
 
