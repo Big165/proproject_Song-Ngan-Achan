@@ -47,9 +47,7 @@ if st.button("กดตรงนี้เพื่อดูผล"):
     st.subheader("เสียใจด้วย คุณเป็นโรคเบาหวาน")
    elif out[0] == 0:
     st.image('./img/TWO.jpg', width=1000)
-    t.markdown(
-    "<h2 style='text-align: center; color: orange;'>ยินดีด้วย คุณไม่เป็นโรคเบาหวาน</h2>",
-    unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; color: orange;'>ยินดีด้วย คุณไม่เป็นโรคเบาหวาน</h2>",unsafe_allow_html=True)
  
 else:
     st.write("ไม่ทำนาย")
