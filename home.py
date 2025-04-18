@@ -44,10 +44,10 @@ if st.button("กดตรงนี้เพื่อดูผล"):
 
    if out[0] == 1:
     st.image('./img/THREE.jpg', width=1000)
-    st.markdown("<h2 style='text-align: center; color: #003366;'>เสียใจด้วย คุณเป็นโรคเบาหวาน</h2>",unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; color: #2F4F4F	;'>เสียใจด้วย คุณเป็นโรคเบาหวาน</h2>",unsafe_allow_html=True)
    elif out[0] == 0:
     st.image('./img/TWO.jpg', width=1000)
-    st.markdown("<h2 style='text-align: center; color: #003366;'>ยินดีด้วย คุณไม่เป็นโรคเบาหวาน</h2>",unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; color: #2F4F4F	;'>ยินดีด้วย คุณไม่เป็นโรคเบาหวาน</h2>",unsafe_allow_html=True)
  
 else:
     st.write("ไม่ทำนาย")
