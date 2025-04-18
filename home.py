@@ -44,14 +44,14 @@ if st.button("กดตรงนี้เพื่อดูผล"):
 
    if out[0] == 1:
     st.image('./img/THREE.jpg', width=1000)
-    st.write("เสียใจด้วย คุณเป็นโรคเบาหวาน")
+    st.subheader("เสียใจด้วย คุณเป็นโรคเบาหวาน")
    elif out[0] == 0:
     st.image('./img/TWO.jpg', width=1000)
-    st.write("ยินดีด้วย คุณไม่เป็นโรคเบาหวาน")
+    st.subheader("ยินดีด้วย คุณไม่เป็นโรคเบาหวาน")
  
 else:
     st.write("ไม่ทำนาย")
 
 
 
-st.subheader("By นายวงศกร สุขขันติราษฎร์")
+st.write("By นายวงศกร สุขขันติราษฎร์")
